@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-primary-600: #4caf4f;
+        --color-background: #F5F7FA;
+
+        --font-primary: "Qwigley", cursive;
+      }
+      @layer base {
+        .btn-primary {
+          @apply bg-primary-600 text-white py-2 px-8 rounded;
+        }
+      }
+      @layer components {
+        .btn-primary {
+          /* @apply md:bg-primary-600 md:text-white md:py-6; */
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <header class="flex flex-wrap justify-evenly items-center gap-10 m-10">
+    <div class="flex justify-start items-center">
+      <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.3106 9.17109L9.55815 15.5978L5.80572 9.17109H13.3106ZM14.3159 8.59668H4.79639L9.55815 16.7346L14.3159 8.59668Z"
+          fill="#263238" />
+        <path
+          d="M19.8348 1.17808L23.5872 7.60481H16.0823L19.8348 1.17808ZM19.8348 0.0292969L15.073 8.16715H24.5966L19.8348 0.0292969Z"
+          fill="#263238" />
+        <path d="M0.233887 0.0292969L4.22647 7.22725L8.5894 0.210039L0.233887 0.0292969Z" fill="#4CAF4F" />
+        <path d="M9.55813 0.659668L13.7461 7.81746H5.36206L9.55813 0.659668Z" fill="#4CAF4F" />
+        <path d="M14.8245 9.38037L19.0165 16.735H10.4331L14.6943 9.38037H14.8245Z" fill="#4CAF4F" />
+        <path d="M15.7322 8.93408L19.8346 16.1762L23.9941 8.93408H15.7322Z" fill="#4CAF4F" />
+      </svg>
+      <p class="text-2xl bold">Nextcent</p>
+    </div>
+    <div class="flex flex-wrap justify-end gap-10">
+      <nav class="flex items-center gap-12">
+        <a href="/">Home</a>
+        <a href="">Features</a>
+        <a href="">Community</a>
+        <a href="">Blog</a>
+        <a href="">Pricing</a>
+      </nav>
+      <button class="btn-primary flex items-center">
+        Register Now
+        <svg width="40" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 9L15.2929 5.70711C15.6834 5.31658 15.6834 4.68342 15.2929 4.29289L12 1M15 5L1 5" stroke="white"
+            stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+  <section class=" mt-10 bg-background pt-10 pb-5">
+    <div>
+      <div class="flex justify-evenly items-center flex-wrap gap-15">
+        <div>
+          <div class="text-5xl">Lessons and Insights</div>
+          <div class="text-5xl text-primary-600 m-2">from 8 years</div>
+          <div class="text-2l m-2">
+            Where to grow you business as a photographer: site or social media?
+          </div>
+          <button class="btn-primary m-3">Register</button>
+        </div>
+        <div>
+          <img src="./Assets/Illustration.png" alt="">
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <svg width="33" height="8" viewBox="0 0 33 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="3.64075" cy="3.79773" r="3.48035" fill="#4CAF4F" />
+          <circle opacity="0.3" cx="16.17" cy="3.79773" r="3.48035" fill="#4CAF4F" />
+          <circle opacity="0.3" cx="28.6993" cy="3.79773" r="3.48035" fill="#4CAF4F" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section>
+
+  </section>
+</body>
+
+</html>
